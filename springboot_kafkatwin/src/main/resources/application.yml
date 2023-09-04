@@ -1,0 +1,21 @@
+spring:
+    kafka:
+        bootstrap-servers: 172.19.0.2:9092
+        producer:
+            retries : 3
+        consumer:
+            group-id: twin-consumer
+            auto-offset-reset: earliest
+
+springboot_kafkatwin:
+    topic1: telemetry-motor-1
+    topic2: telemetry-motor-2
+    datapath: /home/kuljeet/Twin/springboot_kafkatwin
+
+
+
+# Kafka Properties
+#com.digitaltwin.springboot_kafkatwin.bootstrap-servers: localhost:9092
+#com.digitaltwin.springboot_kafkatwin.topic1: telemetry-motor-1
+#com.digitaltwin.springboot_kafkatwin.topic1: telemetry-motor-2
+#        bootstrap-servers: 172.19.0.3:9092
